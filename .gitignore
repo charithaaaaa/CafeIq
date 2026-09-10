@@ -1,0 +1,23 @@
+# macOS
+.DS_Store
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+
+# Backend
+backend/target/
+backend/.venv/
+
+# Local environment / secrets
+.env
+*.env
+
+# Local tooling
+.sf/
+.deepeval/
+
+# IDE
+.idea/
+.vscode/
+*.iml

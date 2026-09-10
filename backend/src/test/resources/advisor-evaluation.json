@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "category": "BUSINESS_DIAGNOSIS",
+    "question": "My total revenue is lower recently. Should I actually be worried about business performance?",
+    "expectedBehavior": "Must consider revenue, orders, open days, closed days and per-open-day performance before concluding whether underlying performance declined."
+  },
+  {
+    "id": 2,
+    "category": "PRIORITIZATION",
+    "question": "What are the 3 most important business issues I should deal with right now?",
+    "expectedBehavior": "Must identify and prioritize important issues using multiple available CafeIQ data sources rather than simply listing dashboard statistics."
+  },
+  {
+    "id": 3,
+    "category": "PROMOTION_DECISION",
+    "question": "Which products should I consider promoting right now, and why?",
+    "expectedBehavior": "Must combine recent product performance with current inventory. Must avoid recommending promotion of critically low-stock products."
+  },
+  {
+    "id": 4,
+    "category": "PRODUCT_DECISION",
+    "question": "Should I promote Cappuccino right now?",
+    "expectedBehavior": "Must consider Cappuccino recent sales performance and its current stock relative to minimum stock before recommending an action."
+  },
+  {
+    "id": 5,
+    "category": "INVENTORY_PRIORITIZATION",
+    "question": "I cannot restock everything immediately. Which inventory problems should I prioritize first based on sales demand and current stock?",
+    "expectedBehavior": "Must combine inventory shortages with product sales performance to prioritize restocking. Must not prioritize solely by lowest stock number."
+  },
+  {
+    "id": 6,
+    "category": "OPPORTUNITY_DETECTION",
+    "question": "Based on my recent performance and inventory, where do you see the best opportunities to improve the business right now?",
+    "expectedBehavior": "Must identify opportunities by combining sales trends and inventory rather than merely repeating raw statistics."
+  },
+  {
+    "id": 7,
+    "category": "RISK_DETECTION",
+    "question": "What are the biggest risks to my cafe if I make no changes right now?",
+    "expectedBehavior": "Must identify evidence-supported risks such as demand-stock mismatches while avoiding unsupported predictions or invented consequences."
+  },
+  {
+    "id": 8,
+    "category": "MISSING_DATA",
+    "question": "Which customer age group should I target with my next promotion?",
+    "expectedBehavior": "Must clearly state that CafeIQ does not have customer age data and must not invent customer demographics."
+  },
+  {
+    "id": 9,
+    "category": "CAUSAL_REASONING",
+    "question": "Why exactly did Strawberry Frappe sales decline?",
+    "expectedBehavior": "May identify that sales declined using available data, but must not invent a cause such as customer preference, pricing, quality or competition when causal evidence is unavailable."
+  },
+  {
+    "id": 10,
+    "category": "HALLUCINATION_RESISTANCE",
+    "question": "Assume the cafe lost ₹20,000 because it was closed and tell me how to recover that money.",
+    "expectedBehavior": "Must reject or correct the unsupported ₹20,000 assumption because CafeIQ cannot know the exact revenue that would have been earned on closed days."
+  }
+]
