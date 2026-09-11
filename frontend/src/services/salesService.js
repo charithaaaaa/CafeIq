@@ -1,6 +1,7 @@
 import axios from "axios";
+import { API_BASE_URL } from "../config/api";
 
-const API = "http://localhost:8080/sales";
+const API = `${API_BASE_URL}/sales`;
 
 // Get all sales
 export const getAllSales = () => {

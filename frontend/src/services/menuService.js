@@ -1,8 +1,9 @@
 import axios from "axios";
+import { API_BASE_URL } from "../config/api";
+
 //Axios is a JavaScript library that sends HTTP requests from React to your Spring Boot backend. Without it react cannot communicate with ur backend
 
-
-const API = "http://localhost:8080/menu";
+const API = `${API_BASE_URL}/menu`;
 
 export const getMenuItems = () =>
     axios.get(API);
@@ -15,4 +16,3 @@ export const updateMenuItem = (id, menu) =>
 
 export const deleteMenuItem = (id) =>
     axios.delete(`${API}/${id}`);
-
