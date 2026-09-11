@@ -10,7 +10,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/menu")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {"http://localhost:5173", "https://cafeiq-frontend.vercel.app"})
 public class MenuController {
 
     private final MenuService menuService;

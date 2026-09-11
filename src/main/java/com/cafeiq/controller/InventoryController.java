@@ -9,7 +9,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/inventory")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {"http://localhost:5173", "https://cafeiq-frontend.vercel.app"})
 public class InventoryController {
 
     private final InventoryService inventoryService;

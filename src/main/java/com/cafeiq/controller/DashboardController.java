@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/dashboard")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {"http://localhost:5173", "https://cafeiq-frontend.vercel.app"})
 public class DashboardController {
 
     private final DashboardService dashboardService;

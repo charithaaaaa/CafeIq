@@ -14,7 +14,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/analytics")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {"http://localhost:5173", "https://cafeiq-frontend.vercel.app"})
 public class AnalyticsController {
 
     @Autowired
